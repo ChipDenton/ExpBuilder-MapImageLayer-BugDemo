@@ -6,7 +6,6 @@ import type { FeatureLayerDataSourceConstructorOptions } from 'jimu-data-source'
 import MapImageLayer from "@arcgis/core/layers/MapImageLayer.js";
 import { Button } from 'jimu-ui';
 
-
 const DataExplorerWidget = (props: AllWidgetProps<any>) => {
   const [jimuMapView, setJimuMapView] = React.useState<JimuMapView>(null)
 
