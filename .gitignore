@@ -1,0 +1,18 @@
+# Node Package Manager (NPM)
+node_modules
+
+# Editor / Integrated Development Environment (IDE)
+## VS Code
+
+# OS Files
+## MacOS
+.DS_Store
+
+# Working Files
+## Compiled Python
+__pycache__/
+## Experience Builder
+ArcGISExperienceBuilder/
+## Build Files
+src/apps/**/download-times.json
+/dist/
