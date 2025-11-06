@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../",
+    "jsx": "react",
+    "paths": {
+      "calcite-components": [
+        "./ArcGISExperienceBuilder/client/jimu-ui/calcite-components"
+      ],
+      "esri/*": [
+        "./ArcGISExperienceBuilder/client/node_modules/@arcgis/core/*"
+      ],
+      "jimu-*": ["./ArcGISExperienceBuilder/client/jimu-*"],
+      "widgets/*": [
+        "./ArcGISExperienceBuilder/client/your-extensions/widgets/*"
+      ]
+    }
+  }
+}

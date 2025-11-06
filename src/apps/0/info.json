@@ -1,0 +1,25 @@
+{
+  "created": 1750100602833,
+  "description": "",
+  "id": "0",
+  "modified": 1755016094916,
+  "owner": "dentonc@stanford.edu",
+  "tags": [],
+  "thumbnail": null,
+  "title": "Untitled experience 1",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "Ready To Use",
+    "JavaScript",
+    "status: Published",
+    "version:1.17.0",
+    "publishVersion:1.17.0"
+  ],
+  "portalUrl": "https://lbre-basemap-dev.stanford.edu/portal",
+  "username": "dentonc@stanford.edu",
+  "name": "Untitled experience 1",
+  "isLocalApp": true,
+  "url": null
+}

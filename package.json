@@ -1,0 +1,30 @@
+{
+  "name": "stanford-university-experience-builder",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Stanford University Data Explorer Widget",
+  "homepage": "https://github.com/EsriPS/stanford-university-experience-builder#readme",
+  "author": "Esri - Professional Services",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EsriPS/stanford-university-experience-builder.git"
+  },
+  "scripts": {
+    "setup": "node ./.scripts/install.mjs",
+    "start": "npx concurrently \"npm run-script start:server\" \"npm run-script start:client\"",
+    "start:client": "cd ArcGISExperienceBuilder/client && npm start",
+    "start:server": "cd ArcGISExperienceBuilder/server && npm start",
+    "build": "node ./.scripts/export.mjs"
+  },
+  "keywords": [
+    "ArcGIS Experience Builder",
+    "Experience Builder"
+  ],
+  "devDependencies": {
+    "adm-zip": "^0.5.10",
+    "concurrently": "^8.2.2",
+    "filenamify": "^6.0.0",
+    "lnk": "^1.1.0",
+    "pluralize": "^8.0.0"
+  }
+}

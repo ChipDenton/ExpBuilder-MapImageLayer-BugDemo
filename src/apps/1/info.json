@@ -1,0 +1,23 @@
+{
+  "created": 1762452168337,
+  "description": "",
+  "id": "1",
+  "modified": 1762452458582,
+  "owner": "cdenton@esri.com_prof_services",
+  "tags": [],
+  "thumbnail": null,
+  "title": "Untitled experience 1",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "Ready To Use",
+    "JavaScript",
+    "status: Draft",
+    "version:1.17.0"
+  ],
+  "portalUrl": "https://prof-services.maps.arcgis.com",
+  "username": "cdenton@esri.com_prof_services",
+  "name": "Untitled experience 1",
+  "isLocalApp": true
+}
