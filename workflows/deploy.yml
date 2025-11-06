@@ -1,0 +1,43 @@
+name: Deploy Apps to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install
+        run: npm install
+
+      - name: Setup
+        run: npm run setup
+
+      - name: Build
+        run: npm run build
+
+      - name: Unzip
+        working-directory: dist/apps
+        run: find -name '*.zip' -exec sh -c 'unzip -d "${1%_[0-9.]*.zip}" "$1"' _ {} \;
+
+      - name: Cleanup
+        working-directory: dist/apps
+        run: rm *.zip
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          clean-exclude: "pr-preview"
+          folder: dist/apps
+          force: false
